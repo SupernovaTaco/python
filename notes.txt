@@ -1,0 +1,127 @@
+print("hello world")
+
+string = "very cool"
+print("i am " + string)
+
+print(str(integer)+string2)
+
+string manipulation -
+mystring = "very cool"
+print(mystring[3]) - y
+
+mystring = "very cool"
+print(mystring[0:9]) - very cool
+
+mystring = "very cool"
+print(mystring[3:]) - y cool
+
+mystring = "very cool"
+print(mystring[3:7]) - y co
+
+list -
+pets = ['cat','dog','fish','girbil']
+print(pets[-2]) - fish
+
+dictionary -
+webster = {}
+webster[0] = '0'
+webster[1] = '1'
+webster['a'] = 'a'
+print(webster[1]) - 1
+
+webster = {}
+webster['stupid'] = 'idiot'
+webster[1] = '1'
+webster['a'] = 'a'
+print(webster['stupid']) - idiot
+
+dictionary = {'cat':'jerk' , 'dog':'freind'}
+print(dictionary['dog']) - freind
+
+cube = [1111111111,1111111111,1111111111,1111111111,1111111111,1111111111,1111111111,1111111111,1111111111,1111111111]
+
+for aasdfaa in cube:
+    print(aasdfaa)
+
+
+absolutevalue = abs(-7)
+print(absolutevalue) - distance from zero
+
+
+from filecmp import cmp
+from math import ceil, floor
+
+
+ceilvalue = ceil(99.87) #ceil always pushes to next full number
+print(ceilvalue) - 100
+
+floorvalue = floor(99.99) #floor pushes to previous full number 
+print(floorvalue) - 99
+
+comparevalue = cmp(1, 2) #outputs true/false depending on if the numbers are the same 
+print(comparevalue)
+
+def multiply (intA, intB):
+    answer = intA * intB
+    print(answer)
+    return answer
+
+
+x = multiply(9, 10) - 90
+
+x = multiply(9.7, 10.765)
+print(round(x,1)) - 
+104.4205
+104.4
+
+
+
+
+users = {"leo" : "leonard aguillon" , "bolis" : "olivia aguillon" , "bee" : "livier aguillon"}
+
+def greetuser (username):
+    fullname = users[username]
+    print(fullname)
+    return fullname
+
+name = greetuser("bolis")
+print ("welcome " + name + "!") 
+
+#functions act like hidden pockets
+#things inside a function are invisible to everything else
+#you can minimise functions to clean things up
+
+print("enter the password")
+password = input()
+print(password) - "whatever you give it"
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+names = {"leo" : "leonard aguillon" , "bolis" : "olivia aguillon" , "bee" : "livier aguillon", "taco" : "donald martin"}
+
+def namecheck (username):
+    if username in names:
+        return True
+    else:
+        return False
+
+def getuser (username):
+    fullname = names[username]
+    return fullname
+
+
+def login ():
+    print("enter user name: ")
+    userinput = input()
+    return userinput
+
+user = login()
+validuser = namecheck(user)
+while validuser == False:
+    print("The username provided does not match any in our database. Please try again.")
+    user = login()
+    validuser = namecheck(user)
+
+print("welcome, " + getuser(user)) 
