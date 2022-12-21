@@ -1,0 +1,6 @@
+#compiled/dll files
+__pycache__/
+#test files
+test*.*
+#garbage files
+junk/
