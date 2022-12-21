@@ -7,16 +7,10 @@ clear()
 traits = ("health", "damage", "armor", "lifesteal", "stamina", "poison resist", "fire resist")
 tplnum={}
 
-
-    
-    
 def trplusnumb():
         
     def randtrait():
-        randtrait = random.choice(tuple(traits))
-        
-        
-            
+        randtrait = random.choice(tuple(traits))     
         return randtrait
     randnum = random.randint(1,1000)
     tplnum[randnum] = randtrait()
