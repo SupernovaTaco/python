@@ -6,7 +6,7 @@ f = open(userfile, "a")
 
 def userinput():
     userinput = input("what would you like to add? ")
-    f.write(userinput)
+    f.write(userinput+"\n")
 
 def askForItems():
     print("How many items do you have to add to your list")
@@ -29,15 +29,7 @@ while numberOfReceiptItems > 0 and itemsEntered < numberOfReceiptItems:
     
     userinput()
     
-
-
-
+clear()
 f.close()
 file1 = open(userfile, "r")
 print(file1.read())
-
-
-
-
-
-
